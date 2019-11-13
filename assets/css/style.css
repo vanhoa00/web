@@ -1,18 +1,18 @@
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: #888;
-    line-height: 30px;
-    text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #888;
+	line-height: 30px;
+	text-align: center;
 }
 
 strong { font-weight: 500; }
 
 a, a:hover, a:focus {
 	color: #cb9f3d; text-decoration: none;
-    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 
 h1, h2 { margin-top: 10px; font-family: 'Josefin Sans', sans-serif; font-size: 48px; font-weight: 300; color: #555; line-height: 56px; }
@@ -72,11 +72,11 @@ ul.navbar-nav {
 	border: 0;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 14px;
-    font-weight: 300;
-    color: #fff;
-    opacity: 1;
-    text-transform: uppercase;
-    -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
+	font-weight: 300;
+	color: #fff;
+	opacity: 1;
+	text-transform: uppercase;
+	-moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
 }
 .navbar-inverse ul.navbar-nav li a.btn-link-3:hover,
 .navbar-inverse ul.navbar-nav li a.btn-link-3:focus,
@@ -170,14 +170,45 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 	
 	/* logo */
-    .navbar-brand {
-    	background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 102px 32px !important;
-    }
+	.navbar-brand {
+		background-image: url(../img/logo@2x.png) !important; background-repeat: no-repeat !important; background-size: 102px 32px !important;
+	}
 	
 }
 
 
 .search-box{
-	padding-top: 20px;
-	align-items: center;
+	padding: 0px 0px 40px 0px;
+	width: 100%;
 }
+
+.more{
+	position:absolute;
+	right:10px;
+	text-align:right
+}
+.bodyShow{
+	padding: 50px 100px;
+}
+
+.section-header {
+	border-bottom:1px solid #ccc;
+	padding: 10px 0px !important;
+	margin-bottom:10px !important;
+	position:relative; 
+	text-align: left;
+} 
+.section-header>a:first-child {
+	background:#cf0f1a;
+	color:white;
+	padding: 7px 15px;
+	border-top-right-radius	: 10px; 
+}
+.NoiThat{
+	padding-bottom: 10px;
+}
+.SanPham{
+	border: 1px solid #b8b8b8;
+	margin: 0px 20px 0px 0px;
+}
+
