@@ -3,7 +3,7 @@ body { font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 400; 
 
 strong { font-weight: 600; }
 
-a { color: #cb9f3d; border-bottom: 1px dashed #cb9f3d; text-decoration: none; transition: all .3s; }
+a { color: #cb9f3d; border-bottom: 1px solid #cb9f3d; text-decoration: none; transition: all .3s; }
 a:hover, a:focus { color: #cb9f3d; border: 0; text-decoration: none; }
 
 h1, h2 { margin-top: 10px; font-size: 38px; font-weight: 300; color: #555; line-height: 50px; font-style: italic; }
