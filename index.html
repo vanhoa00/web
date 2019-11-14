@@ -13,9 +13,9 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-		<link rel="stylesheet" href="assets/css/animate.css">
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="assets/css/media-queries.css">
+		<link rel="stylesheet" href="public/assets/css/animate.css">
+		<link rel="stylesheet" href="public/assets/css/style.css">
+		<link rel="stylesheet" href="public/assets/css/media-queries.css">
 
 	</head>
 
@@ -34,7 +34,19 @@
 					</div>
 					<div class="pull-right">
 						<ul class="header-links">
-							<li><a href="login/index.html"><i class="far fa-user"></i> My Account</a></li>
+							<li>
+								<div class="dropdown show">
+									<a class="dropdown-toggle"  href="login/login.html" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="far fa-user"></i>
+										My account
+									</a>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #1E1F29;">
+										<a class="dropdown-item" href="#">Login</a>
+										<a class="dropdown-item" href="#">User</a>
+										<a class="dropdown-item" href="#">Log out</a>
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -51,7 +63,7 @@
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="index.html" class="logo">
-									<img src="assets/img/logo.png" alt="">
+									<img src="public/assets/img/logo.png" alt="">
 								</a>
 							</div>
 						</div>
@@ -104,7 +116,19 @@
 				<div class="row"> 
 					<div class="col-sm-3">
 						<div class="card product">
-							<img class="card-header bg-transparent" src="assets/img/SanPham/asus.jpg">
+							<img class="card-header bg-transparent" src="public/assets/img/SanPham/asus.jpg">
+							<div class="card-body tdspkhac">
+								<a href="views/productDetail.html">Laptop Gaming Asus ROG Strix SCAR GL503GE-EN021T </a>
+							</div>
+							<div class="card-footer bg-transparent border-0 add-to-cart">
+								<h6 class="product-price">27.290.000 ₫</h6>
+								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="card product">
+							<img class="card-header bg-transparent" src="public/assets/img/SanPham/asus.jpg">
 							<div class="card-body tdspkhac">
 								<a href="#">Laptop Gaming Asus ROG Strix SCAR GL503GE-EN021T </a>
 							</div>
@@ -116,7 +140,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="card product">
-							<img class="card-header bg-transparent" src="assets/img/SanPham/asus.jpg">
+							<img class="card-header bg-transparent" src="public/assets/img/SanPham/asus.jpg">
 							<div class="card-body tdspkhac">
 								<a href="#">Laptop Gaming Asus ROG Strix SCAR GL503GE-EN021T </a>
 							</div>
@@ -128,19 +152,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="card product">
-							<img class="card-header bg-transparent" src="assets/img/SanPham/asus.jpg">
-							<div class="card-body tdspkhac">
-								<a href="#">Laptop Gaming Asus ROG Strix SCAR GL503GE-EN021T </a>
-							</div>
-							<div class="card-footer bg-transparent border-0 add-to-cart">
-								<h6 class="product-price">27.290.000 ₫</h6>
-								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="card product">
-							<img class="card-header bg-transparent" src="assets/img/SanPham/asus.jpg">
+							<img class="card-header bg-transparent" src="public/assets/img/SanPham/asus.jpg">
 							<div class="card-body tdspkhac">
 								<a href="#">Laptop Gaming Asus ROG Strix SCAR GL503GE-EN021T </a>
 							</div>
@@ -155,7 +167,7 @@
 				<div class="row"> 
 					<div class="col-sm-3">
 						<div class="card product">
-							<img class="card-header bg-transparent" src="assets/img/SanPham/asus.jpg">
+							<img class="card-header bg-transparent" src="public/assets/img/SanPham/asus.jpg">
 							<div class="card-body tdspkhac">
 								<a href="#">Laptop Gaming Asus ROG Strix SCAR GL503GE-EN021T </a>
 							</div>
@@ -186,7 +198,7 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<div class="card product">
-							<img class="card-header bg-transparent" src="assets/img/SanPham/asus.jpg">
+							<img class="card-header bg-transparent" src="public/assets/img/SanPham/asus.jpg">
 							<div class="card-body tdspkhac">
 								<a href="#">Laptop Gaming Asus ROG Strix SCAR GL503GE-EN021T </a>
 							</div>
@@ -198,7 +210,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="card product">
-							<img class="card-header bg-transparent" src="assets/img/SanPham/asus.jpg">
+							<img class="card-header bg-transparent" src="public/assets/img/SanPham/asus.jpg">
 							<div class="card-body tdspkhac">
 								<a href="#">Laptop Gaming Asus ROG Strix SCAR GL503GE-EN021T </a>
 							</div>
@@ -216,15 +228,15 @@
 
 
 		<!-- Javascript -->
-		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		<script src="public/assets/js/jquery-3.2.1.min.js"></script>
 		<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script src="assets/js/jquery.backstretch.min.js"></script>
-		<script src="assets/js/wow.min.js"></script>
-		<script src="assets/js/retina-1.1.0.min.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
-		<script src="assets/js/scripts.js"></script>
+		<script src="public/assets/js/jquery.backstretch.min.js"></script>
+		<script src="public/assets/js/wow.min.js"></script>
+		<script src="public/assets/js/retina-1.1.0.min.js"></script>
+		<script src="public/assets/js/waypoints.min.js"></script>
+		<script src="public/assets/js/scripts.js"></script>
 	</body>
 	<footer id="footer">
 		<!-- top footer -->
