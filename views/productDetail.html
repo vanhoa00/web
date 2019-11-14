@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Lamborghinin</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/media-queries.css">
+    <!--CSS NEW-->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#">Top</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#">Item 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#">Item 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#">Item 3</a>
+                    </li>
+                    <li><button type="button" class="btn btn-warning">Sign in</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--SHOW DETAIL ITEMS-->
+    <div class="container" style="margin-top: 100px;">
+        <!--BREADCRUMB-->
+        <div class="row">
+
+        </div>
+        <!--/BREADCRUMB-->
+        <!--PRODUCT-->
+        <div class="row">
+            <!--Left content-->
+            <div class="col-sm-6">
+                <!--Narbar product images-->
+                <div class="row" width=100;>
+                    <div id="showImg">
+                        <img class="showImg" src="../public/images/img1.jpg" alt="First slide" id="img1">
+                        <script>
+                            var i = 0;
+                            var images = [];
+                            images[0] = '<img class="showImg" src="../public/images/img1.jpg" alt="First slide" id="img1">';
+                            images[1] = '<img class="showImg" src="../public/images/img2.jpg" alt="Second slide" id="img2">';
+                            images[2] = '<img class="showImg" src="../public/images/img3.jpg" alt="Third slide" id="img3">';
+                            function showImg() {
+                                var temp = document.getElementById('showImg');
+                                //document.slide.src = images[i];
+                                temp.innerHTML = images[i];
+                            }
+                        </script>
+                    </div>
+                </div>
+                <!--list detail images of product-->
+                <div class="row mt-1">
+                    <div class="listImg">
+                        <div onclick="pushImg(event)"><img class="Img demo cursor" src="../public/images/img1.jpg"
+                                id="0"></div>
+                        <div onclick="pushImg(event)"><img class="Img demo cursor" src="../public/images/img2.jpg"
+                                id="1"></div>
+                        <div onclick="pushImg(event)"><img class="Img demo cursor" src="../public/images/img3.jpg"
+                                id="2"></div>
+                        <script>
+                            function pushImg() {
+                                var abc = document.getElementById('showImg');
+                                abc.innerHTML = images[event.target.attributes[2].nodeValue];
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!--Right content-->
+            <div class="col-sm-6 border">
+                <!--Product detail-->
+                <div class="ml-5">
+                    <!--Name of product-->
+                    <div class="row">
+                        <h2 class="product-name">Day la xe lamborghini</h2>
+                    </div>
+                    <!--Cost-->
+                    <div class="row">
+                        <h3 class="product-price">$980.00</h3>
+                    </div>
+                    <!--Description-->
+                    <div class="row">
+                        Mô tả
+                    </div>
+                    <!--Count down time-->
+                    <div class="row">
+                        Time out: 15h30p
+                    </div>
+                    <!--Add to cart-->
+                    <div class="row mt-1">
+                        <button href="#" class="btn btn-danger btn-lg">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Shopping Cart
+                        </button>
+                    </div>
+                    <!--lorem -->
+                    <div class="row">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    </div>
+                </div>
+                <!--Đang suy nghĩ-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Product tab -->
+					<div class="col-md-12">
+                            <div id="product-tab">
+                                <!-- product tab nav -->
+                                <ul class="tab-nav">
+                                    <li class="active"><a data-toggle="tab" href="#tab1" style="border-bottom: 0;">Description</a></li>
+                                    <li><a data-toggle="tab" href="#tab2" style="border-bottom: 0;">Details</a></li>
+                                </ul>
+                                <!-- /product tab nav -->
+    
+                                <!-- product tab content -->
+                                <div class="tab-content">
+                                    <!-- tab1  -->
+                                    <div id="tab1" class="tab-pane fade in active">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>ahihi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /tab1  -->
+    
+                                    <!-- tab2  -->
+                                    <div id="tab2" class="tab-pane fade in">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /tab2  -->
+                                </div>
+                                <!-- /product tab content  -->
+                            </div>
+                        </div>
+                        <!-- /product tab -->
+            </div>
+        </div>
+        <!--/PRODUCT-->
+
+        <!--RELATED PRODUCT-->
+        <div class="row">
+            <h3>Nguyen Ngoc Manh</h3>
+        </div>
+    </div>
+    <!--/SHOW DETAIL ITEMS-->
+
+
+    <!-- Javascript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <!--NEW JS-->
+    <script src="../js/javascript.js"></script>
+</body>
+
+</html>
