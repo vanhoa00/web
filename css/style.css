@@ -81,3 +81,38 @@
   #product-tab .tab-nav li a:hover:after, #product-tab .tab-nav li a:focus:after, #product-tab .tab-nav li.active a:after {
     width: 100%;
   }
+
+  /* COUNT DOWN: https://codepen.io/SitePoint/pen/MwNPVq */
+  body{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  
+  #clockdiv{
+    font-family: sans-serif;
+    color: black;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  
+  #clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: rgb(135, 214, 200);
+    display: inline-block;
+  }
+  
+  .smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+  }
+  /* END COUNT DOWN*/
