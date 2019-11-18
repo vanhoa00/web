@@ -41,3 +41,19 @@ function getTimeRemaining(endtime) {
   var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
   initializeClock('clockdiv', deadline);
 // END COUNT DOWN
+
+
+// MAIN MENU
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+  header.classList.add("sticky");
+  } else {
+  header.classList.remove("sticky");
+  }
+}
+// END MAIN MENU

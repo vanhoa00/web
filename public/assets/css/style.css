@@ -171,7 +171,7 @@ footer { padding: 40px 0; }
 	text-align:right
 }
 .bodyShow{
-	padding: 50px 100px;
+  padding: 40px 20px;
 }
 
 ul, ol {
@@ -232,12 +232,12 @@ ul, ol {
 /*----------------------------*\
 	Logo
 \*----------------------------*/
-
-#header {
+.main-header{
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #15161D;
   border-bottom: 3px solid #D10024;
+  z-index: 100;
 }
 
 .header-logo {
@@ -589,4 +589,13 @@ Splash Container / Wrapper
 
 .splash-container .card-footer-item {
     padding: 12px 28px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .NoiThat{
+  padding-top: 102px;
 }
