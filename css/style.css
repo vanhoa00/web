@@ -157,3 +157,7 @@ dd{
   float: left;
   text-align: left;
 }
+
+.checked {
+  color: orange;
+}
