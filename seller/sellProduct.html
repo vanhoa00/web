@@ -101,7 +101,7 @@
     </div>
     <!-- /MAIN HEADER -->
 
-    <div class="container">
+    <div class="container mb-5">
         <div class="row mt-2 mb-3">
             <h2>Thông tin đăng ký sản phẩm đấu giá</h2>
         </div>
@@ -161,10 +161,25 @@
                     <h5>Tự động gia hạn</h5>
                 </dt>
                 <dd>
-                    <input type="radio" name="" id=""> Có </br>
-                    <input type="radio" name="" id=""> Không
+                    <div class="input-radio">
+                        <input type="radio" name="payment" id="payment-1">
+                        <label for="payment-1">
+                            <span></span>
+                            Có
+                        </label>
+                    </div>
+                    <div class="input-radio">
+                        <input type="radio" name="payment" id="payment-2">
+                        <label for="payment-2">
+                            <span></span>
+                            Không
+                        </label>
+                    </div>
                 </dd>
             </dl>
+            <button class="btn btn-success btn-block" onclick="window.location.href = '../index.html';">
+                Đăng bán
+            </button>
         </div>
         <!--Add to cart-->
     </div>
