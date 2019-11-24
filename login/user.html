@@ -134,7 +134,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-5">
 							<div class="profile-head">
 								<h5>
 									Kshiti Ghelani
@@ -145,18 +145,24 @@
 								<p class="proile-rating">RANKINGS : <span>8/10</span></p>
 								<ul class="nav nav-tabs" id="myTab" role="tablist">
 									<li class="nav-item">
-										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#About"
 											role="tab" aria-controls="home" aria-selected="true">About</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#Timeline"
 											role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div class="col-md-2">
-							<input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
+						<div class="col-md-3">
+							<div class="edit_profile">
+								<input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
+							</div>
+							<div>
+								<input type="submit" class="profile-edit-btn" name="btnAddMore" value="Change password" />
+							</div>
+							
 						</div>
 					</div>
 					<div class="row">
@@ -176,7 +182,7 @@
 						</div>
 						<div class="col-md-8">
 							<div class="tab-content profile-tab" id="myTabContent">
-								<div class="tab-pane fade show active" id="home" role="tablist">
+								<div class="tab-pane fade show active" id="About" role="tablist">
 									<div class="row">
 										<div class="col-md-6">
 											<label>User Id</label>
@@ -218,7 +224,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="profile" role="tablist">
+								<div class="tab-pane fade" id="Timeline" role="tablist">
 									<div class="row">
 										<div class="col-md-6">
 											<label>Experience</label>
@@ -271,34 +277,103 @@
 					</div>
 				</div>
 				<div role="tabpanel" class="tab-pane fade" id="favProduct">
-						<table class="table table-hover mt-2">
-								<thead>
-								  <tr>
-									<th>Tên sản phẩm</th>
-									<th>Lastname</th>
-									<th>Email</th>
-								  </tr>
-								</thead>
-								<tbody>
-								  <tr>
-									<td>Nokia 5</td>
-									<td>Doe</td>
-									<td>john@example.com</td>
-								  </tr>
-								  <tr>
-									<td>Dell vostro 5568</td>
-									<td>Moe</td>
-									<td>mary@example.com</td>
-								  </tr>
-								  <tr>
-									<td>Xiaomi Redmi note 5</td>
-									<td>Dooley</td>
-									<td>july@example.com</td>
-								  </tr>
-								</tbody>
-							  </table>
+					<table class="table table-hover mt-2">
+						<thead>
+							<tr>
+								<th>Tên sản phẩm</th>
+								<th>Người đăng bán</th>
+								<th>Email</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Nokia 5</td>
+								<td>Doe</td>
+								<td>john@example.com</td>
+							</tr>
+							<tr>
+								<td>Dell vostro 5568</td>
+								<td>Moe</td>
+								<td>mary@example.com</td>
+							</tr>
+							<tr>
+								<td>Xiaomi Redmi note 5</td>
+								<td>Dooley</td>
+								<td>july@example.com</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<div role="tabpanel" class="tab-pane fade" id="aucProduct">ccc</div>
+				<div role="tabpanel" class="tab-pane fade" id="aucProduct">
+					<table class="table table-hover mt-2">
+						<thead>
+							<tr>
+								<th>Tên sản phẩm</th>
+								<th>Người đăng bán</th>
+								<th>Thời gian còn lại</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Samsung note 9</td>
+								<td>Kshiti</td>
+								<td>10 days</td>
+							</tr>
+							<tr>
+								<td>MSI GL65</td>
+								<td>Kshiti</td>
+								<td>15 days</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="selProduct">
+					<table class="table table-hover mt-2">
+						<thead>
+							<tr>
+								<th>Tên sản phẩm</th>
+								<th>Người đăng bán</th>
+								<th>Tình Trạng</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Samsung note 9</td>
+								<td>Kshiti</td>
+								<td>Đang bán</td>
+							</tr>
+							<tr>
+								<td>MSI GL65</td>
+								<td>Kshiti</td>
+								<td>Đang bán</td>
+							</tr>
+							<tr>
+								<td>Acer Nito 5</td>
+								<td>Kshiti</td>
+								<td>Đã bán</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="rate">
+					<table class="table table-hover mt-2">
+						<thead>
+							<tr>
+								<th>Tên sản phẩm</th>
+								<th>UserName</th>
+								<th>Rate</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Acer Nito 5</td>
+								<td>Doe</td>
+								<td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
 			</div>
 
 
