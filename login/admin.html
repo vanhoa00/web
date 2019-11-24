@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>XPS15</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="../public/assets/css/animate.css">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="../public/assets/css/media-queries.css">
+    <!--CSS NEW-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../login/css/admin.css">
+</head>
+
+<body>
+    <!-- TOP HEADER -->
+    <div id="top-header" class="top-header">
+        <div class="container">
+            <div class="pull-left">
+                <ul class="header-links">
+                    <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i>email@email.com</a></li>
+                    <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+                </ul>
+            </div>
+            <div class="pull-right">
+                <ul class="header-links">
+                    <li>
+                        <div class="dropdown show">
+                            <a class="dropdown-toggle" href="login/login.html" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-user"></i>
+                                My account
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                                style="background-color: #1E1F29;">
+                                <a class="dropdown-item" href="../login/login.html">Login</a>
+                                <a class="dropdown-item" href="../login/user.html">User</a>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /TOP HEADER -->
+    <!-- MAIN HEADER -->
+    <div id="myHeader" class="main-header">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-md-3">
+                    <div class="header-logo">
+                        <a href="../index.html" class="logo">
+                            <img src="../public/assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- /LOGO -->
+
+                <!-- SEARCH BAR -->
+                <div class="col-md-6">
+                    <div class="header-search">
+                        <form>
+                            <select class="input-select">
+                                <option value="0">All Categories</option>
+                                <option value="1">Category 01</option>
+                                <option value="1">Category 02</option>
+                            </select>
+                            <input class="input" placeholder="Search here">
+                            <button class="search-btn">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /SEARCH BAR -->
+
+                <!-- ACCOUNT -->
+                <div class="col-md-3 clearfix">
+                    <div class="header-ctn">
+
+                    </div>
+                </div>
+                <!-- /ACCOUNT -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- /MAIN HEADER -->
+    <div class="container">
+        <!-- QUAN LY DANH MUC-->
+        <div class="row mt-3">
+            <h3 class="font-weight-bold">Quản lý danh mục</h3>
+        </div>
+        <div class="row mt-2">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Mã DM</th>
+                        <th>Tên DM</th>
+                        <th>Tổng số sản phẩm</th>
+                        <th>Tác vụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">DM1</td>
+                        <td>Điện thoại</td>
+                        <td>10</td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">DM2</td>
+                        <td>Laptop</td>
+                        <td>20</td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td scope="row">DM3</td>
+                            <td>Tablet</td>
+                            <td>0</td>
+                            <td>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /QUAN LY DANH MUC-->
+
+        <!-- QUAN LY TAI KHOAN-->
+        <div class="row mt-3">
+            <h3 class="font-weight-bold">Quản lý người dùng</h3>
+        </div>
+        <div class="row mt-2">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Mã</th>
+                        <th>Tên</th>
+                        <th>Loại tài khoản</th>
+                        <th>Đánh giá</th>
+                        <th>Tác vụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">AD01</td>
+                        <td>Manh</td>
+                        <td>Bidder</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option1" checked=""><i class="fa fa-eye"></i>
+                                    Xem
+                                </label>
+                                <label class="btn btn-outline-brand  btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option2"> <i class="fa fa-edit"></i> Sửa
+                                </label>
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">AD02</td>
+                        <td>Hoa</td>
+                        <td>Seller</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option1" checked=""><i class="fa fa-eye"></i>
+                                    Xem
+                                </label>
+                                <label class="btn btn-outline-brand  btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option2"> <i class="fa fa-edit"></i> Sửa
+                                </label>
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">AD03</td>
+                        <td>Hoa</td>
+                        <td>Seller</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option1" checked=""><i class="fa fa-eye"></i>
+                                    Xem
+                                </label>
+                                <label class="btn btn-outline-brand  btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option2"> <i class="fa fa-edit"></i> Sửa
+                                </label>
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">AD04</td>
+                        <td>Hoa</td>
+                        <td>Seller</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option1" checked=""><i class="fa fa-eye"></i>
+                                    Xem
+                                </label>
+                                <label class="btn btn-outline-brand  btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option2"> <i class="fa fa-edit"></i> Sửa
+                                </label>
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">AD05</td>
+                        <td>Hoa</td>
+                        <td>Seller</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option1" checked=""><i class="fa fa-eye"></i>
+                                    Xem
+                                </label>
+                                <label class="btn btn-outline-brand  btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option2"> <i class="fa fa-edit"></i> Sửa
+                                </label>
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row  justify-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <button class="page-link" href="#" tabindex="-1">Previous</button>
+                    </li>
+                    <li class="page-item"><button class="page-link" href="#">1</button></li>
+                    <li class="page-item"><button class="page-link" href="#">2</button></li>
+                    <li class="page-item"><button class="page-link" href="#">3</button></li>
+                    <li class="page-item">
+                        <button class="page-link" href="#">Next</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /QUAN LY TAI KHOAN-->
+
+        <!-- QUAN LY SAN PHAM-->
+        <div class="row">
+            <h3 class="font-weight-bold">Quản lý sản phẩm</h3>
+        </div>
+        <div class="row mt-2">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Mã</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Danh mục</th>
+                        <th>Đánh giá</th>
+                        <th>Tác vụ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">SP01</td>
+                        <td>Nokia 5</td>
+                        <td>Điện thoại</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SP02</td>
+                        <td>Dell 5568</td>
+                        <td>Laptop</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SP03</td>
+                        <td>MSI GL62</td>
+                        <td>Laptop</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SP04</td>
+                        <td>ROG STRIX</td>
+                        <td>Laptop</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">SP05</td>
+                        <td>Dell XPS</td>
+                        <td>Laptop</td>
+                        <td>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star checked" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+                                <label class="btn btn-outline-brand btn-outline btn-sm">
+                                    <input type="radio" name="options" id="option3"><i class="fa fa-trash"></i> Xóa
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- /QUAN LY SAN PHAM-->
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--NEW JS-->
+    <script src="../js/javascript.js"></script>
+</body>
+
+<footer id="footer">
+    <!-- top footer -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="footer">
+                        <h3 class="footer-title">About Us</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut.</p>
+                        <ul class="footer-links">
+                            <li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
+                            <li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="footer">
+                        <h3 class="footer-title">Categories</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Hot deals</a></li>
+                            <li><a href="#">Laptops</a></li>
+                            <li><a href="#">Smartphones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="clearfix visible-xs"></div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="footer">
+                        <h3 class="footer-title">Information</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Orders and Returns</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6">
+                    <div class="footer">
+                        <h3 class="footer-title">Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">View Cart</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Track My Order</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /top footer -->
+</footer>
+<!-- /FOOTER -->
+
+</html>

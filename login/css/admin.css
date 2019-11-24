@@ -1,0 +1,11 @@
+.btn-outline-brand {
+    color: #2e2f39;
+    background-color: transparent;
+    border-color: #ffc750;
+}
+
+.btn-outline-brand:hover {
+    color: #2e2f39;
+    background-color: #ffc750;
+    border-color: #ffc750;
+}
